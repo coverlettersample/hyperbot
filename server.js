@@ -71,7 +71,7 @@ const generalTimeout = parseInt(process.env.GENERAL_TIMEOUT || "15")
 envKeys.push('GENERAL_TIMEOUT')
 const engineThreads = process.env.ENGINE_THREADS || "1"
 envKeys.push('ENGINE_THREADS')
-const engineSkillLevel = process.env.ENGINE_SKILL_LEVEL || "5"
+const engineSkillLevel = process.env.ENGINE_SKILL_LEVEL || "4"
 envKeys.push('ENGINE_SKILL_LEVEL')
 const engineHash = process.env.ENGINE_HASH || "16"
 envKeys.push('ENGINE_HASH')

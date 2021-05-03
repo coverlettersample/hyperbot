@@ -71,7 +71,7 @@ const generalTimeout = parseInt(process.env.GENERAL_TIMEOUT || "15")
 envKeys.push('GENERAL_TIMEOUT')
 const engineThreads = process.env.ENGINE_THREADS || "1"
 envKeys.push('ENGINE_THREADS')
-const engineSkillLevel = process.env.ENGINE_SKILL_LEVEL || "20"
+const engineSkillLevel = process.env.ENGINE_SKILL_LEVEL || "5"
 envKeys.push('ENGINE_SKILL_LEVEL')
 const engineHash = process.env.ENGINE_HASH || "16"
 envKeys.push('ENGINE_HASH')
@@ -99,7 +99,7 @@ const bookDepth = parseInt(process.env.BOOK_DEPTH || "20")
 envKeys.push('BOOK_DEPTH')
 const bookSpread = parseInt(process.env.BOOK_SPREAD || "4")
 envKeys.push('BOOK_SPREAD')
-const bookRatings = (process.env.BOOK_RATINGS || "1600,1800").split(",")
+const bookRatings = (process.env.BOOK_RATINGS || "1600,1700").split(",")
 envKeys.push('BOOK_RATINGS')
 const bookSpeeds = (process.env.BOOK_SPEEDS || "bullet,blitz,rapid").split(",")
 envKeys.push('BOOK_SPEEDS')
@@ -134,11 +134,6 @@ const usePolyglot = isEnvTrue('USE_POLYGLOT')
 envKeys.push('USE_POLYGLOT')
 const useSolution = isEnvTrue('USE_SOLUTION')
 envKeys.push('USE_SOLUTION')
-const welcomeMessage = process.env.WELCOME_MESSAGE || `Selam, ben Ekşi Sözlük Satranç Kulübünden Rıfkı`
-envKeys.push('WELCOME_MESSAGE')
-const goodLuckMessage = process.env.GOOD_LUCK_MESSAGE || `İyi şanslar !`
-envKeys.push('GOOD_LUCK_MESSAGE')
-const goodGameMessage = process.env.GOOD_GAME_MESSAGE || `Gg, Teşekkürler !`
 envKeys.push('GOOD_GAME_MESSAGE')
 let disableSyzygy = isEnvTrue('DISABLE_SYZYGY')
 envKeys.push('DISABLE_SYZYGY')
